@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>LeasingCar</title>
+</head>
+<body>
+    <header class="header" id="header__popup">
+        <div class="container">
+            <div class="menu">
+            
+                <div class="logo wow animate__animated animate__backInLeft" data-wow-offset="100" data-wow-duration="1.5s">
+                    <a href="#" target="_blank"><img src="img/logo.svg" alt="logo" title="Логотип"></a>
+                    <div class="header__logo">лизинговая компания</div>
+                </div>
+                
+                <div class="burger-menu">
+                    <a href="#" class="burger-menu__button">
+                        <span class="burger-menu__lines"></span>
+                    </a>
+                <nav class="burger-menu__nav" id="nav__menu">
+                    
+                    <ul class="menu__link">
+                        <li class="menu__link-active"> <a class="nav__link">Лизинг</a>
+                            <ul class="sub-menu__link">
+                                <li>
+                                    <a class="sub-nav__link" href="#" target="_blank">Для личного пользования</a>
+                                </li>
+                                <li>
+                                    <a class="sub-nav__link" href="#" target="_blank">Для юридических диц</a>
+                                </li>
+                                <li>
+                                    <a class="sub-nav__link" href="#" target="_blank">Калькулятор</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li> <a class="nav__link" href="#" target="_blank">Каталог</a></li>
+                        <li> <a class="nav__link" href="#" target="_blank">О нас</a></li>
+                    </ul>
+                        <button id="button_modal" class="button wow animate__animated animate__fadeIn" data-wow-offset="100" data-wow-duration="3.5s">Оставить заявку</button>
+                    </nav>
+                    <div class="burger-menu__overlay"></div>
+
+                    </div>
+                    
+    </div>
+    </div>
+    </header>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="swiper-slide__text">
+            <h1 class="wow animate__animated animate__fadeInDown" data-wow-offset="300" data-wow-duration="1.5s">Авто в лизинг для физических лиц </h1>
+            <p class="p">Получите машину за 5 дней</p>
+            <form >
+                <button id="button_modal1" class="button button-slider">Оставить заявку</button>
+            </form>
+            </div>
+            <img class="car" src="img/car.png" alt="">
+        </div>
+        <div class="swiper-slide">
+            <div class="swiper-slide__text">
+                <div class="title">Авто в лизинг для физических лиц </div>
+                <p class="p">Получите машину за 5 дней</p>
+                <form >
+                    <button id="button_modal2" class="button button-slider">Оставить заявку</button>
+                </form>
+                </div>
+            <img class="car" src="img/car.png" alt="">
+        </div>
+        <div class="swiper-slide">
+            <div class="swiper-slide__text">
+                <div class="title">Авто в лизинг для физических лиц </div>
+                <p class="p">Получите машину за 5 дней</p>
+                <form >
+                    <button id="button_modal3" class="button button-slider">Оставить заявку</button>
+                </form>
+                </div>
+            <img class="car" src="img/car.png" alt="">
+        </div>
+        <div class="swiper-slide">
+            <div class="swiper-slide__text">
+                <div class="title">Авто в лизинг для физических лиц </div>
+                <p class="p">Получите машину за 5 дней</p>
+                <form >
+                    <button id="button_modal4" class="button button-slider">Оставить заявку</button>
+                </form>
+                </div>
+            <img class="car" src="img/car.png" alt="">
+        </div>
+        <div class="swiper-slide">
+            <div class="swiper-slide__text">
+                <div class="title">Авто в лизинг для физических лиц </div>
+                <p class="p">Получите машину за 5 дней</p>
+                <form >
+                    <button id="button_modal5" class="button button-slider">Оставить заявку</button>
+                </form>
+                </div>
+            <img class="car" src="img/car.png" alt="">
+        </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="calculator">
+        <div class="container">
+        <div class="title calcul wow animate__animated animate__backInLeft" data-wow-offset="200" data-wow-duration="2.5s">Рассчитайте стоимость автомобиля в лизинг</div>
+        <div class="calculator__input">
+            <div class="input__flex">
+                <p class="input__text">Стоимость автомобиля</p>
+                <label class="input_filter">
+                    <div class="input__flex-range">
+                <input class="input" type="number" id="total-cost-number"  min="1000000" max="6000000">
+                <input class="range rangenumber"  id="total-cost-range"  type="range" min="1000000" max="6000000" oninput="rangenumber()">
+                </div>
+                <span class="input__logo log">₽</span>
+                </label>
+            </div>
+            <div class="input__flex">
+                <p class="input__text">Первоначальный взнос</p>
+                <label class="input_filter">
+                    
+                    <div class="input__flex-range r">
+                    <input class="input active-input" type="number" id="total-cost-protient" min="1" max="60"> 
+                    <input class=" range rangepr" type="range" value="14" id="total-cost-protient-range"  min="1" max="60" oninput="rangepr()" >
+                    <span class="protient">%</span>
+                </div>
+                <div class="input__logo active-logo" id="total-cost-month-active">0<span>₽</span></div>
+                    </label>
+            </div>
+            <div class="input__flex">
+                <p class="input__text">Срок лизинга</p>
+                <label class="input_filter">
+                    <div class="input__flex-range">
+                    <input class="input" type="number" id="total-cost-month" min="1" max="60"> 
+                    <input class="range rangermonth" type="range" value="14" id="total-cost-month-protient"  min="1" max="60" oninput="rangermonth()" >
+                    </div>
+                    <span class="input__logo month">мес.</span>
+                    </label>
+            </div>
+        </div>
+        <div class="flex-payment-contract">
+            <div class="sum_payment">
+            <div class="contract">
+                <p class="input__text">Сумма договора лизинга</p>
+                <div class="calcul-value" id="contract-calcul">0 <span>₽</span></div>
+            </div>
+            <div class="payment">
+                <p class="input__text">Ежемесячный платеж от</p>
+                <div class="calcul-value" id="payment-calcul">0 <span>₽</span></div>
+            </div>
+        </div>
+                <button id="button_modal6" class="button button-calcul">Оставить заявку</button>
+            
+        </div>
+        </div>
+        </div>
+<div class="popup" id="modal">
+    <div class="popup__table">
+    <div class="popup__overlay">
+        <div class="popup__body">
+            <span class="popup__close"><img src="img/close.svg" alt=""></span>
+            <div class="popup__content">
+            <div class="popup__title">Онлайн-заявка</div>
+            <div class="popup__subtitle">Заполните форму, и мы вскоре свяжемся с вами, чтобы ответить на все вопросы</div>
+            
+                <form action="#" class="form__body" id="form">
+                    <div class="form_flex">
+                    <div class="form_item">
+                        
+                        <div class="yes">
+                        <input type="text" id="phone" name="phone" class="form_input _req _phone" placeholder="+7 (921) 123 45 67">
+                        <div class="is-valid" id="yesvalid"><img src="img/yes.svg" alt=""></div>
+                    </div>
+                    </div>
+                    <div class="form_item">
+                        
+                        <div class="yes">
+                        <input type="text" id="name" name="name" class="form_input _req" placeholder="Имя">
+                        <div class="is-valid1" id="yesvalid1"><img src="img/yes.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="agryment">
+                    <div class="popup__subtitle agryment_text">Нажимая на кнопку «Оставить заявку»,  я даю согласие на <a href="#" target="_blank">обработку персональных данных</a></div>
+                    <button type="submit" id="submbtn" class="button argyment_button button-slider">Оставить заявку</button>
+                </div>
+                <div class="href">
+                    <a class="link_social" href="#" target="_blank"><img src="img/whatsapp.svg" alt=""></a>
+                    <a class="link_social" href="#" target="_blank"><img src="img/telegram.svg" alt=""></a>
+                </div>
+                </form>
+                
+        </div>
+        </div>
+        </div>
+    </div>
+</div>
+<script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/progressbar.min.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
